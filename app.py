@@ -26,7 +26,7 @@ app = Flask(__name__)
 
 def create_map():
     # prg_map=folium.Map(location=[50.0869808355617, 14.420696466020118],zoom_start=16)
-    prg_map=folium.Map(location=[50.10757904960116, 14.420951629813585],zoom_start=16)
+    prg_map=folium.Map(location=[47.503910, 19.050760],zoom_start=14)
 
     responsive_script = """
     <script>
@@ -63,34 +63,16 @@ def create_map():
     prg_map.get_root().html.add_child(folium.Element(responsive_script))
     
     marker_cluster = MarkerCluster().add_to(prg_map)
-    # folium.Marker([50.08755474796508, 14.423318842912195], icon=folium.Icon(color="red", prefix='fa',icon='bicycle'),).add_to(marker_cluster)
-    # folium.Marker([50.090322944037986, 14.42162471740614], icon=folium.Icon(color="red", prefix='fa',icon='heart'),).add_to(marker_cluster)
-    # folium.Marker([50.08441631969368, 14.428302542337063], icon=folium.Icon(color="red", prefix='fa',icon='phone'),).add_to(marker_cluster)
-    # folium.Marker([50.081328739825466, 14.41321606932961], icon=folium.Icon(color="red", prefix='fa',icon='masks-theater'),).add_to(marker_cluster)
-    folium.Marker([50.10544963658487, 14.427315231276873],
-                   popup=folium.Popup('Planetarium', max_width=300),
-                   icon=folium.Icon(color="red", prefix='fa',icon='bicycle'),).add_to(marker_cluster)
-    folium.Marker([50.10831045673811, 14.424126005952495],
-                   popup=folium.Popup('Playground', max_width=300),
-                   icon=folium.Icon(color="red", prefix='fa',icon='heart'),).add_to(marker_cluster)
-    folium.Marker([50.10965658330681, 14.420232509911955],
-                   popup=folium.Popup('Tenis', max_width=300),
-                   icon=folium.Icon(color="red", prefix='fa',icon='phone'),).add_to(marker_cluster)
-    folium.Marker([50.110355321102915, 14.413503010582618],
-                   popup=folium.Popup('Waterfall', max_width=300),
-                   icon=folium.Icon(color="red", prefix='fa',icon='masks-theater'),).add_to(marker_cluster)
-    folium.Marker([50.10812548984484, 14.412958241589292],
-                   popup=folium.Popup('Bench', max_width=300),
-                   icon=folium.Icon(color="red", prefix='fa',icon='bicycle'),).add_to(marker_cluster)
-    folium.Marker([50.106058787595565, 14.410833563743788],
-                   popup=folium.Popup('Turnik', max_width=300),
-                   icon=folium.Icon(color="red", prefix='fa',icon='heart'),).add_to(marker_cluster)
-    folium.Marker([50.105211210875616, 14.415743779890281],
-                   popup=folium.Popup('Restaurant', max_width=300),
-                   icon=folium.Icon(color="red", prefix='fa',icon='phone'),).add_to(marker_cluster)
-    LocateControl(auto_start=False).add_to(prg_map)
 
-
+    folium.Marker([47.512603, 19.04895],
+                   popup=folium.Popup('The Dead Squirell', max_width=300),
+                   icon=folium.Icon(color="red", prefix='fa',icon='otter')).add_to(marker_cluster),
+    folium.Marker([47.5040513, 19.0514726],
+                   popup=folium.Popup('Kermit the Frog', max_width=300),
+                   icon=folium.Icon(color="red", prefix='fa',icon='frog')).add_to(marker_cluster),
+    folium.Marker([47.50239, 19.039462],
+                   popup=folium.Popup('Főkukac', max_width=300),
+                   icon=folium.Icon(color="red", prefix='fa',icon='turtle')).add_to(marker_cluster)
 
     return prg_map
 
