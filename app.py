@@ -133,6 +133,10 @@ def create_map():
     folium.Marker([47.49791494719889, 19.03984081162018],
                    popup=folium.Popup('Rabbit', max_width=300),
                    icon=folium.Icon(color="red", prefix='fa',icon='paw')).add_to(marker_cluster),
+    folium.Marker([47.48476030514735, 19.05909640224894],
+                   popup=folium.Popup('Jane Dark', max_width=300),
+                   icon=folium.Icon(color="red", prefix='fa',icon='person')).add_to(marker_cluster),
+                   
 
     return prg_map
 
