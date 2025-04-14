@@ -127,7 +127,7 @@ def create_map():
     folium.Marker([47.506815317129444, 19.025463886505808],
                    popup=folium.Popup('Mekk Elek Cert', max_width=300),
                    icon=folium.Icon(color="red", prefix='fa',icon='dragon')).add_to(marker_cluster),
-    folium.Marker([47.49730006126405, 19.047420132927574],
+    folium.Marker([47.49730344472314, 19.04741610188415],
                    popup=folium.Popup('Baloon Dog', max_width=300),
                    icon=folium.Icon(color="red", prefix='fa',icon='dog')).add_to(marker_cluster),
     folium.Marker([47.49791494719889, 19.03984081162018],
