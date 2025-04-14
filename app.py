@@ -121,7 +121,7 @@ def create_map():
     folium.Marker([47.50926926464884, 19.045323876064934],
                    popup=folium.Popup('Ushanka', max_width=300),
                    icon=folium.Icon(color="red", prefix='fa',icon='hat-cowboy')).add_to(marker_cluster),
-    folium.Marker([47.50907113306574, 19.035877393405233],
+    folium.Marker([47.50907579897638, 19.03588699313249],
                    popup=folium.Popup('Paddington', max_width=300),
                    icon=folium.Icon(color="red", prefix='fa',icon='bear')).add_to(marker_cluster),
     folium.Marker([47.506815317129444, 19.025463886505808],
