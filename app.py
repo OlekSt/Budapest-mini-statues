@@ -126,13 +126,13 @@ def create_map():
                    icon=folium.Icon(color="red", prefix='fa',icon='bear')).add_to(marker_cluster),
     folium.Marker([47.506815317129444, 19.025463886505808],
                    popup=folium.Popup('Mekk Elek Cert', max_width=300),
-                   icon=folium.Icon(color="red", prefix='fa',icon='magnet')).add_to(marker_cluster),
+                   icon=folium.Icon(color="red", prefix='fa',icon='dragon')).add_to(marker_cluster),
     folium.Marker([47.49730006126405, 19.047420132927574],
                    popup=folium.Popup('Baloon Dog', max_width=300),
                    icon=folium.Icon(color="red", prefix='fa',icon='dog')).add_to(marker_cluster),
     folium.Marker([47.49791494719889, 19.03984081162018],
                    popup=folium.Popup('Rabbit', max_width=300),
-                   icon=folium.Icon(color="red", prefix='fa',icon='dog')).add_to(marker_cluster),
+                   icon=folium.Icon(color="red", prefix='fa',icon='paw')).add_to(marker_cluster),
 
     return prg_map
 
